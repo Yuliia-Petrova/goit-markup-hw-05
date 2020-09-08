@@ -108,7 +108,7 @@ p {
   background-color: var(--accent-color);
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   border-radius: 2px;
 }
 
@@ -192,6 +192,12 @@ p {
   background: var(--accent-color);
   display: inline-block;
   padding: 10px 32px;
+  cursor: pointer;
+}
+
+.hero-link:focus,
+.hero-link:active {
+  outline: none;
 }
 
 /* Benefits section */
@@ -544,6 +550,28 @@ footer .container {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.cross-icon {
+  fill: #000000;
+}
+
+.modal-close-button {
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary-bg-color);
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  margin-left: auto;
+  margin-top: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.modal-close-button:active,
+.modal-close-button:focus {
+  outline: none;
 }
 
 /* Portfolio */

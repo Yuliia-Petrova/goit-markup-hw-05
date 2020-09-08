@@ -63,7 +63,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="hero-link">Заказать услугу</button>
+          <button class="hero-link" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -415,8 +415,15 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
-      <div class="modal"></div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-button" data-modal-close>
+          <svg class="cross-icon" width="11px" height="11px">
+            <use href="./images/sprite.svg#cross-icon"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
