@@ -642,6 +642,7 @@ button {
 
 .card {
   position: relative;
+  overflow: hidden;
 }
 .card-text {
   position: absolute;
@@ -652,20 +653,15 @@ button {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding-top: 63px;
-  padding-bottom: 63px;
-  padding-left: 24px;
-  padding-right: 24px;
-
-  /* opacity: 0; */
-  /* pointer-events: none; */
+  padding: 63px 24px;
+  pointer-events: none;
   bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 0px;
-  overflow: hidden;
-  transform: translate(0%, 100%);
+  transform: translateY(100%);
+  transition: transform 250ms var(--timing-function);
+}
+
+.projects-link:hover .card-text {
+  transform: translateY(0);
 }
 
 .projects-list {
