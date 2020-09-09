@@ -148,8 +148,8 @@ p {
   transition: 250ms var(--timing-function);
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent-color);
 }
 
@@ -392,6 +392,12 @@ p {
   transition: background-color 250ms var(--timing-function);
 }
 
+.social-links-icon,
+.join-icon {
+  fill: #afb1b8;
+  transition: 250ms var(--timing-function);
+}
+
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
@@ -399,12 +405,6 @@ p {
 
 .social-link:hover svg {
   fill: var(--additional-color);
-}
-
-.social-links-icon,
-.join-icon {
-  fill: #afb1b8;
-  transition: 250ms var(--timing-function);
 }
 
 /* Our clients */
@@ -451,6 +451,7 @@ p {
 }
 
 /* Footer */
+
 footer .logo {
   display: block;
   margin-bottom: 20px;
@@ -676,6 +677,7 @@ button {
   margin: 0 30px 30px 0;
   width: calc((100% - 30px * 2) / 3);
   border: 1px solid #eeeeee;
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .projects-element:nth-child(3n) {
