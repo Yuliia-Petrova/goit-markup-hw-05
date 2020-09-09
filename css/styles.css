@@ -6,6 +6,7 @@
   --logo-color: #000000;
   --bg-color: #2f303a;
   --primary-bg-color: #f5f4fa;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -85,6 +86,7 @@ p {
   text-decoration: none;
   display: block;
   padding: 32px 0;
+  transition: color 250ms var(--timing-function);
 }
 
 .site-nav .link:hover,
@@ -110,7 +112,15 @@ p {
   left: 0;
   bottom: -1px;
   border-radius: 2px;
+  /* opacity: 0; */
+  /* transform: scaleX(0);
+  transition: transform 250ms var(--timing-function); */
 }
+
+/* .link.current:hover::after {
+  transform: scaleX(1); */
+/* opacity: 1;
+} */
 
 .contacts {
   display: flex;
@@ -128,12 +138,14 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms var(--timing-function);
 }
 
 .envelope-icon,
 .tel-icon {
   margin-right: 10px;
   fill: #757575;
+  transition: 250ms var(--timing-function);
 }
 
 .contacts-link:hover,
@@ -377,6 +389,7 @@ p {
   height: 44px;
   padding: 12px;
   border-radius: 50%;
+  transition: background-color 250ms var(--timing-function);
 }
 
 .social-link:hover,
@@ -391,6 +404,7 @@ p {
 .social-links-icon,
 .join-icon {
   fill: #afb1b8;
+  transition: 250ms var(--timing-function);
 }
 
 /* Our clients */
@@ -419,10 +433,12 @@ p {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: border-color 250ms var(--timing-function);
 }
 
 .client-icon {
   fill: #afb1b8;
+  transition: 250ms var(--timing-function);
 }
 
 .client-link:hover,
@@ -505,6 +521,7 @@ footer .container {
   padding: 12px;
   background-color: #ffffff1a;
   border-radius: 50%;
+  transition: background-color 250ms var(--timing-function);
 }
 
 .join-link:hover,
@@ -608,6 +625,9 @@ button {
   font-family: inherit;
   font-weight: 500;
   padding: 6px 22px;
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .filter:hover,
