@@ -145,7 +145,7 @@ p {
 .tel-icon {
   margin-right: 10px;
   fill: #757575;
-  transition: 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 }
 
 .contact-link:hover,
@@ -395,7 +395,7 @@ p {
 .social-links-icon,
 .join-icon {
   fill: #afb1b8;
-  transition: 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 }
 
 .social-link:hover,
@@ -438,7 +438,7 @@ p {
 
 .client-icon {
   fill: #afb1b8;
-  transition: 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 }
 
 .client-link:hover,
